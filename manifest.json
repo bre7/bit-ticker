@@ -1,0 +1,8 @@
+{
+  "name": "Bitstamp ticker",
+  "short_name": "BitTicker",
+  "lang": "en-US",
+  "start_url": "https://bre7.github.io/bit-ticker/btc.html",
+  "display": "standalone",
+  "theme_color": "#221f1f"
+}

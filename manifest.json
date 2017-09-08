@@ -4,5 +4,12 @@
   "lang": "en-US",
   "start_url": "https://bre7.github.io/bit-ticker/btc.html",
   "display": "standalone",
-  "theme_color": "#221f1f"
+  "theme_color": "#221f1f",
+  "icons": [
+    {
+      "src": "bitcoin.svg",
+      "sizes": "192x192",
+      "type": "image/svg"
+    }
+  ]
 }

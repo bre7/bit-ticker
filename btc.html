@@ -3,56 +3,56 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Bitstamp ticker</title>
-	
-	<link rel="manifest" href="manifest.json">
 
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="BitTicker">
-	<meta name="apple-mobile-web-app-title" content="BitTicker">
-	<meta name="theme-color" content="#221f1f">
-	<meta name="msapplication-navbutton-color" content="#221f1f">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="msapplication-starturl" content="https://bre7.github.io/bit-ticker/btc.html">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
 
-	<link rel="icon" type="image/svg" sizes="192x192" href="bitcoin.png">
-	<link rel="apple-touch-icon" type="image/svg" sizes="192x192" href="bitcoin.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="BitTicker">
+    <meta name="apple-mobile-web-app-title" content="BitTicker">
+    <meta name="theme-color" content="#221f1f">
+    <meta name="msapplication-navbutton-color" content="#221f1f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="https://bre7.github.io/bit-ticker/btc.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="btc.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="icon" type="image/svg" sizes="192x192" href="bitcoin.png">
+    <link rel="apple-touch-icon" type="image/svg" sizes="192x192" href="bitcoin.png">
+
+    <link href="btc.min.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
     <script src="https://js.pusher.com/4.2.1/pusher.min.js"></script>
     <script type="text/javascript">
-    	var oldTickerValue = 0;
+        var oldTickerValue = 0;
 
         // Enable pusher logging - don't include this in production
-    	// Pusher.logToConsole = true;
+        // Pusher.logToConsole = true;
 
-	    var pusher = new Pusher('de504dc5763aeef9ff52');
+        var pusher = new Pusher('de504dc5763aeef9ff52');
 
-	    var channel = pusher.subscribe('live_trades');
-	    channel.bind('trade', function(data) {
-	    	var indicator = data.price > oldTickerValue ? "😍" : "😭";
-	    	document.getElementById('ticker').innerHTML = `USD ${data.price} ${indicator}`;
-	    	document.title = `USD ${data.price} ${indicator}`;
-	    	oldTickerValue = data.price;
-	    });
+        var channel = pusher.subscribe('live_trades');
+        channel.bind('trade', function (data) {
+            var indicator = data.price > oldTickerValue ? "😍" : "😭";
+            document.getElementById('ticker').innerHTML = `USD ${data.price} ${indicator}`;
+            document.title = `USD ${data.price} ${indicator}`;
+            oldTickerValue = data.price;
+        });
     </script>
 </head>
 <body>
-	<div class="wrapper">
-	    <div class="centered">
-	        <div class="header">
-	            <h1 id="logo">Bitstamp</h1>
-	        </div>
+<div class="wrapper">
+    <div class="centered">
+        <div class="header">
+            <h1 id="logo">Bitstamp</h1>
+        </div>
 
-	        <div id="content-en" class="content">
-	            <p id="ticker" class="line1">&lt;Waiting&gt;</p>
-	        </div>
+        <div id="content-en" class="content">
+            <p id="ticker" class="line1">&lt;Waiting&gt;</p>
+        </div>
 
-	        <div class="shadow-up"></div>
+        <div class="shadow-up"></div>
 
-	    </div>
-	</div>
+    </div>
+</div>
 </body>
 </html>

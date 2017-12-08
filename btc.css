@@ -1,8 +1,16 @@
 /* Reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 html,
@@ -14,247 +22,137 @@ body {
     display: table;
 }
 
-
-
-body{
-margin:0;
-padding:0;
-color: #fff;
-position: relative;
-font-family: 'Roboto', sans-serif;
-background: #221f1f;
-text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background: #221f1f;
+    text-align: center;
 }
 
-
-.wrapper{
+.wrapper {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;	
+    vertical-align: middle;
 }
 
-
-.centered{
+.centered {
     display: inline-block;
-   }
-
-
-.header{
-	width: 60%;
-	padding: 0px 20%;
-	float: left;
 }
 
-.header h1{
-	font-size: 102px;
-	font-weight: 900;
-	text-transform: uppercase;
-	color: #ed4136;
-	line-height: 90%;
-	margin-bottom: 15%;
+.header {
+    width: 60%;
+    padding: 0px 20%;
+    float: left;
 }
 
-
-
-.content{
-	width: 60%;
-	text-align: center;
-	padding: 4% 20%;
-	margin-bottom: 10px;
-	float: left;
+.header h1 {
+    font-size: 102px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ed4136;
+    line-height: 90%;
+    margin-bottom: 15%;
 }
 
-.content p{
-	font-size: 22px;
-	line-height: 30px;
+.content {
+    width: 60%;
+    text-align: center;
+    padding: 4% 20%;
+    margin-bottom: 10px;
+    float: left;
 }
 
-.content p.line1{
-	font-size: 50px;
-	font-weight: 900;
-	text-transform: uppercase;
-	margin-bottom: 20px;
+.content p {
+    font-size: 22px;
+    line-height: 30px;
 }
 
-.content p.line2{
-	font-size: 30px;
-	font-weight: 540;
-	text-transform: uppercase;
-	margin-top: 40px;
+.content p.line1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-.content p.line3{
-	margin-top: 80px;
+.content p.line2 {
+    font-size: 30px;
+    font-weight: 540;
+    text-transform: uppercase;
+    margin-top: 40px;
 }
 
-.shadow-up{
-	width: 100%;
-	float: left;
-	height: 21px;
-	background: url(../images/shadow.png) center top no-repeat;
+.content p.line3 {
+    margin-top: 80px;
 }
 
-.shadow-down{
-	width: 100%;
-	float: left;
-	height: 21px;
-	background: url(../images/shadow.png) center bottom no-repeat;
+.shadow-up {
+    width: 100%;
+    float: left;
+    height: 21px;
+    background: url(../images/shadow.png) center top no-repeat;
 }
 
-
-
-.form{
-	width: 30%;
-	padding: 0 35%;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	float: left;
+.shadow-down {
+    width: 100%;
+    float: left;
+    height: 21px;
+    background: url(../images/shadow.png) center bottom no-repeat;
 }
 
-.form h2{
-	font-size: 17px;
-	font-weight: 900;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
+@media only screen and (max-width: 1024px) {
 
-.field{
-	width: 70%;
-	margin-right: 2%;
-	float: left;
-}
+    .header {
+        width: 40%;
+        padding: 0 30%;
+        float: left;
+    }
 
-.field input{
-	-webkit-border-radius: 4px 4px 4px 4px;
-	border-radius: 4px 4px 4px 4px;
-	width: 80%;
-	border-top: none;
-	border-left: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	border-right: none;		
-	border-bottom: 1px solid #000;
-	border-sizing: border-box;
-	font-size: 20px;
-	color: #999;
-	float: left;
-	padding: 10px 10%;
-}
-
-
-.submit{
-	width: 28%;
-	float: left;
-}
-
-
-.submit input{
-	border-radius: 5px;
-	background: #ed4136;
-	width: 100%;
-	float: left;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	cursor: pointer;
-	color: #fff;
-	font-weight: 700;
-	letter-spacing: -1px;
-	padding: 10px 0;
-	display: block;
-	border: none;	
-}
-
-.submit:hover input{
-	background: #db3c32;
-}
-
-a {
-	color: #fff;
-	text-decoration: none;
-}
-
-
-
-@media only screen and (max-width: 1024px){
-
-	.header{
-		width: 40%;
-		padding: 0px 30%;
-		float: left;
-	}
-
-	.content{
-		width: 40%;
-		text-align: center;
-		padding:0 30%;
-		margin-bottom: 10px;
-		float: left;
-	}
-
-	.form{
-		width: 40%;
-		padding: 0 30%;
-		margin-top: 20px;
-		margin-bottom: 25px;
-		float: left;
-	}
-
+    .content {
+        width: 40%;
+        text-align: center;
+        padding: 0 30%;
+        margin-bottom: 10px;
+        float: left;
+    }
 
 }
 
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 768px){
+    .header {
+        width: 80%;
+        padding: 0 10%;
+        float: left;
+    }
 
+    .header h1 {
+        font-size: 3em;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ed4136;
+    }
 
-	.header{
-		width: 80%;
-		padding: 0px 10%;
-		float: left;
-	}
+    .content {
+        width: 80%;
+        text-align: center;
+        padding: 0 10%;
+        margin-bottom: 10px;
+        float: left;
+    }
 
-	.header h1{
-		font-size: 3em;
-		font-weight: 900;
-		text-transform: uppercase;
-		color: #ed4136;
-	}
+    .content p {
+        font-size: 18px;
+        line-height: 90%;
+    }
 
-	.content{
-		width: 80%;
-		text-align: center;
-		padding:0 10%;
-		margin-bottom: 10px;
-		float: left;
-	}
-
-	.content p{
-		font-size: 18px;
-		line-height: 90%;
-	}
-
-	.content p.line1{
-		font-size: 40px;
-		font-weight: 900;
-		text-transform: uppercase;
-		margin-bottom: 15px;
-	}
-
-
-	.form{
-		width: 80%;
-		padding: 0 10%;
-		margin-top: 20px;
-		margin-bottom: 25px;
-		float: left;
-	}
-
-	.form h2{
-		font-size: 14px;
-		font-weight: 900;
-		text-transform: uppercase;
-		margin-bottom: 10px;
-	}
-
+    .content p.line1 {
+        font-size: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
 
 }
